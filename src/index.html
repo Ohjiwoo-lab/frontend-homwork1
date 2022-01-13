@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>영화 별점 평가하기</title>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <div class="box"> 
+            <img id="image" src="../images/poster_bootcamp.png">
+            <p id="content"> 드라마 | 전체이용가 </p>
+            <p id="content2"> 파이썬 부트캠프 </p>
+            <div class="wrapper">
+                <div class="circle">
+                    <input type="image" value="empty" id="good" width="20px" src="../images/icon_thumbs_up.png">
+                </div>
+            </div>
+            <div class="wrapper2">
+                <div class="circle2">
+                    <input width="20px" type="image" id="heart" value="empty" src="../images/icon_heart.png">
+                </div>
+            </div>
+            <p id="content3"> 별점 평균 4.5 </p>
+            <div class="star_wrap">
+                <div class="starpoint_wrap">
+                    <img class="star" src="../images/icon_empty_star.png">
+                    <img class="star" src="../images/icon_empty_star.png">
+                    <img class="star" src="../images/icon_empty_star.png">
+                    <img class="star" src="../images/icon_empty_star.png">
+                    <img class="star" src="../images/icon_empty_star.png">
+                </div>
+            </div>
+            <img id="remove" src="../images/icon_remove_star.png">
+        </div>
+    </body>
+</html>

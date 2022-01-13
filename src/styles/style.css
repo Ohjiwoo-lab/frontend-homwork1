@@ -1,0 +1,104 @@
+.box{
+    margin: 100px auto;
+    width: 500px;
+    height: 400px;
+
+    background-color: rgb(46, 44, 44);
+    border-radius: 10px;  /*박스의 꼭지점을 둥글게 표현*/
+}
+
+#image{
+    margin-top: 40px;
+    margin-left: -50px;
+
+    width: 220px;
+    border-radius: 10px;
+}
+
+#content{
+    margin-top: -300px;
+    margin-left: 210px;
+
+    font-size: 12px;
+    opacity: 0.5;  /*투명도 설정*/
+    color: white;
+}
+
+#content2{
+    margin-top: 20px;
+    margin-left: 210px;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.wrapper{
+    margin-top: 160px;
+    margin-left: -70px;
+    display: flex;
+
+    padding: 30px;
+    max-width: 1170px;
+    flex-shrink: 0;
+}
+
+.circle{
+    margin-top: -100px;
+    margin-left: 250px;
+    border-radius: 50%;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(2em / 0.7);
+    height: calc(2em / 0.7);
+}
+
+.wrapper2{
+    margin-top: -60px;
+    display: flex;
+
+    padding: 30px;
+    max-width: 1170px;
+    flex-shrink: 0;
+}
+
+.circle2{
+    margin-top: -100px;
+    margin-left: 250px;
+    border-radius: 50%;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(2em / 0.7);
+    height: calc(2em / 0.7);
+}
+
+#content3{
+    margin-top: -60px;
+    margin-left: 210px;
+    color: white;
+    font-size: 12px;
+}
+
+.star_wrap{
+    margin-top: 20px;
+    margin-left: 210px;
+}
+
+.star{
+    width: 40px;
+    vertical-align: bottom;
+}
+
+#remove{
+    margin-top: -30px;
+    margin-left: 440px;
+    width: 20px;
+}
