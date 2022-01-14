@@ -24,10 +24,11 @@ window.onload = function(){
         }
     }
 
-    document.getElementsByClassName('star_remove').onclick = function(){
-        let items = document.querySelector('.star_rating');
-        items.forEach(function(item){
-            item.src = '../../images/icon_empty_star.png';
-        });
+    document.getElementById('star-remove').onclick = function(){
+        document.getElementById("first_star").style.backgroundImage = "url('../images/icon_empty_star.png')";
+        document.getElementById("second_star").style.backgroundImage = "url('../images/icon_empty_star.png')";
+        document.getElementById("third_star").style.backgroundImage = "url('../images/icon_empty_star.png')";
+        document.getElementById("fourth_star").style.backgroundImage = "url('../images/icon_empty_star.png')";
+        document.getElementById("fifth_star").style.backgroundImage = "url('../images/icon_empty_star.png')";
     }
 }

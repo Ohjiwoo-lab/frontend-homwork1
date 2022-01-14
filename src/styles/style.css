@@ -101,26 +101,14 @@
 .star-rating :checked ~ label {
     background-image: url('../../images/icon_star.png');
 }
+
 .star-rating label:hover,
 .star-rating label:hover ~ label {
     background-image: url('../../images/icon_star.png');
 }
 
-.star-remove{
+#star-remove{
     margin-top: -30px;
     margin-left: 420px;
     width: 20px;
-}
-.star-remove input {
-    display: none;
-}
-.star-remove label {
-    display: inline-block;
-    z-index: 10;
-    width: 20px;
-    height: 20px;
-    background-image: url('../../images/icon_remove_star.png');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    cursor: pointer;
 }
