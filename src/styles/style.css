@@ -15,90 +15,112 @@
     border-radius: 10px;
 }
 
+#content, #content2, #content3{
+    color: white;
+}
 #content{
     margin-top: -300px;
     margin-left: 210px;
 
     font-size: 12px;
     opacity: 0.5;  /*투명도 설정*/
-    color: white;
 }
-
 #content2{
     margin-top: 20px;
     margin-left: 210px;
 
     font-size: 25px;
     font-weight: bold;
-    color: white;
 }
 
+.wrapper, .wrapper2{
+    display: flex;
+
+    padding: 30px;
+    max-width: 1170px;
+    flex-shrink: 0;
+}
+.circle, .circle2{
+    border-radius: 50%;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(2em / 0.7);
+    height: calc(2em / 0.7);
+}
 .wrapper{
     margin-top: 160px;
     margin-left: -70px;
-    display: flex;
-
-    padding: 30px;
-    max-width: 1170px;
-    flex-shrink: 0;
 }
-
 .circle{
     margin-top: -100px;
     margin-left: 250px;
-    border-radius: 50%;
-    border: 1px solid white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: calc(2em / 0.7);
-    height: calc(2em / 0.7);
 }
-
 .wrapper2{
     margin-top: -60px;
-    display: flex;
-
-    padding: 30px;
-    max-width: 1170px;
-    flex-shrink: 0;
 }
-
 .circle2{
     margin-top: -100px;
     margin-left: 250px;
-    border-radius: 50%;
-    border: 1px solid white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: calc(2em / 0.7);
-    height: calc(2em / 0.7);
 }
 
 #content3{
     margin-top: -60px;
     margin-left: 210px;
-    color: white;
     font-size: 12px;
 }
 
-.star_wrap{
+.star-rating {
     margin-top: 20px;
-    margin-left: 210px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 5.5em;
 }
-
-.star{
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    display: inline-block;
+    z-index: 10;
     width: 40px;
-    vertical-align: bottom;
+    height: 40px;
+    background-image: url('../../images/icon_empty_star.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+}
+.star-rating :checked ~ label {
+    background-image: url('../../images/icon_star.png');
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    background-image: url('../../images/icon_star.png');
 }
 
-#remove{
+.star-remove{
     margin-top: -30px;
-    margin-left: 440px;
+    margin-left: 420px;
     width: 20px;
+}
+.star-remove input {
+    display: none;
+}
+.star-remove label {
+    display: inline-block;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../images/icon_remove_star.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
 }

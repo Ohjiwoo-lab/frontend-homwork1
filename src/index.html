@@ -18,27 +18,40 @@
             <img id="image" src="../images/poster_bootcamp.png">
             <p id="content"> 드라마 | 전체이용가 </p>
             <p id="content2"> 파이썬 부트캠프 </p>
+
             <div class="wrapper">
                 <div class="circle">
                     <input type="image" value="empty" id="good" width="20px" src="../images/icon_thumbs_up.png">
                 </div>
             </div>
+
             <div class="wrapper2">
                 <div class="circle2">
                     <input width="20px" type="image" id="heart" value="empty" src="../images/icon_heart.png">
                 </div>
             </div>
+
             <p id="content3"> 별점 평균 4.5 </p>
-            <div class="star_wrap">
-                <div class="starpoint_wrap">
-                    <img class="star" src="../images/icon_empty_star.png">
-                    <img class="star" src="../images/icon_empty_star.png">
-                    <img class="star" src="../images/icon_empty_star.png">
-                    <img class="star" src="../images/icon_empty_star.png">
-                    <img class="star" src="../images/icon_empty_star.png">
+
+            <div class="rating_wrap">
+                <div class="star-rating">
+                    <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings"/>
+                    <label for="5-stars" class="star"></label>
+                    <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings"/>
+                    <label for="4-stars" class="star"></label>
+                    <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings"/>
+                    <label for="3-stars" class="star"></label>
+                    <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings"/>
+                    <label for="2-stars" class="star"></label>
+                    <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
+                    <label for="1-star" class="star"></label>
+                </div>
+
+                <div class="star-remove">
+                    <input type="checkbox" id="remove" name="remove" v-model="button"/>
+                    <label for="remove"></label>
                 </div>
             </div>
-            <img id="remove" src="../images/icon_remove_star.png">
         </div>
     </body>
 </html>

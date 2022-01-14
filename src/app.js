@@ -23,4 +23,11 @@ window.onload = function(){
             this.value = 'empty';
         }
     }
+
+    document.getElementsByClassName('star_remove').onclick = function(){
+        let items = document.querySelector('.star_rating');
+        items.forEach(function(item){
+            item.src = '../../images/icon_empty_star.png';
+        });
+    }
 }
